@@ -63,7 +63,7 @@ async function runTracking() {
     user_agent: "Mozilla/5.0",
   });
 
-  console.log(Google Sheet response [${sheetResp.status}]:, JSON.stringify(sheetResp.data));
+  console.log(`Google Sheet response [${sheetResp.status}]:`, JSON.stringify(sheetResp.data));
   return { success: true, clickId };
 }
 
