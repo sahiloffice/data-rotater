@@ -3,7 +3,7 @@ import { HttpsProxyAgent } from "https-proxy-agent";
 import http from "node:http";
 
 const {
-  IMPACT_LINK = "https://trackdigi.gotrackier.com/click?campaign_id=408&pub_id=196",
+  IMPACT_LINK = "https://edx.sjv.io/2R23VG",
   GOOGLE_SHEET_WEBHOOK = "https://script.google.com/macros/s/AKfycbw_06TVZzUurJbNcllhjhTjuNOlcatlTb8hsQfo0b9S7lSZTiKuM5mSQhalANsfi116fw/exec",
   CAMPAIGN_TAG = "edx_9july",
   PROXY_URL = "http://r_2b61c33a3c-country-us:f6d5155135@pool3.soxy.pro:5000",
@@ -68,7 +68,7 @@ async function runTracking() {
 }
 
 // Runs every 5 minutes
-const INTERVAL_MS = 5 * 60 * 1000;
+const INTERVAL_MS = 65 * 60 * 1000;
 
 function startScheduler() {
   console.log(`Scheduler started. Running every ${INTERVAL_MS / 60000} minutes.`);
