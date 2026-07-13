@@ -57,13 +57,13 @@ async function runTracking() {
 
   console.log(`Click ID: ${clickId}`);
 
-  await axios.post(GOOGLE_SHEET_WEBHOOK, {
+  const sheetResp = await axios.post(GOOGLE_SHEET_WEBHOOK, {
     campaign_tag: CAMPAIGN_TAG,
     clickid: clickId,
     user_agent: "Mozilla/5.0",
   });
 
-  console.log("Posted to Google Sheet.");
+  console.log(Google Sheet response [${sheetResp.status}]:, JSON.stringify(sheetResp.data));
   return { success: true, clickId };
 }
 
