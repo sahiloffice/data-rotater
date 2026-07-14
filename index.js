@@ -67,8 +67,8 @@ async function runTracking() {
   return { success: true, clickId };
 }
 
-// Runs every 5 minutes
-const INTERVAL_MS = 65 * 60 * 1000;
+// Runs every 45 minutes
+const INTERVAL_MS = 45 * 60 * 1000;
 
 function startScheduler() {
   console.log(`Scheduler started. Running every ${INTERVAL_MS / 60000} minutes.`);
