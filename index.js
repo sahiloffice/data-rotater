@@ -7,7 +7,7 @@ const {
   GOOGLE_SHEET_WEBHOOK = "https://script.google.com/macros/s/AKfycbw_06TVZzUurJbNcllhjhTjuNOlcatlTb8hsQfo0b9S7lSZTiKuM5mSQhalANsfi116fw/exec",
   CAMPAIGN_TAG = "edx_9july",
   PROXY_URL = "http://customer-p5aYo2nqy1-cc-US-sessid-1783950236_10000-m-1:imIBE7RN7gN1avQ@gate.ipfoxy.io:58688",
-  PORT = "58688",
+  PORT = "3000",
 } = process.env;
 
 async function runTracking() {
